@@ -14,7 +14,7 @@ class winston.transports.Growl extends winston.Transport
   name: 'growl'
 
   log: (level, msg = '', meta = {}, cb) ->
-    cb null, true if @silent
+    return cb null, true if @silent
     msg   = msg.toString()[0..40]
     title = meta.title or 'Log'
     image = levelImages[level] or levelImages.info
