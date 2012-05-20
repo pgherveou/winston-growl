@@ -29,8 +29,8 @@ winston.loggers.add('growler', {
 });
 
 growler = winston.loggers.get('growler');
-growler.info("this will trigger a growl notification", {title:'optional title'});
-growler.error("this will trigger anoter growl notification", {title:'Errror'});
+growler.info("info notification", {title:'optional title'});
+growler.error("error notification", {title:'Errror'});
 
 ```
 
