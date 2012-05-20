@@ -28,7 +28,7 @@ winston.loggers.notifier("this will trigger a growl notification", {title:'optio
 
 
 
-To enable growl notification, install [growl] [1] and [growlNotify] [2]
+To make it work you will need to install [growl] [1] and [growlNotify] [2]
 
 
 [1]: http://growl.info/growlupdateavailable   "growl"
