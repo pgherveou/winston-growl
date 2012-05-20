@@ -21,7 +21,7 @@ var winston = require('winston')
   , require('winston-growl');
   
 winston.loggers.add('notifier', growl: {/*logger options*/});
-winston.loggers.notifier("this will trigger a growl notification", {title:'notification title'});
+winston.loggers.notifier("this will trigger a growl notification", {title:'optional title'});
 
 
 ```
