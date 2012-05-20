@@ -1,0 +1,20 @@
+{
+  "name": "winston-growl",
+  "description": "A growl transport for winston",
+  "author": "Pierre Herveou <pgherveou@gmail.com>",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wavded/winston-mail"
+  },
+  "keywords": ["logging", "winston", "growl"],
+  "dependencies": {
+    "growl"        : "*",
+    "winston"      : "*"
+  },
+  "devDependencies": {
+    "coffee-script": "*"
+  },
+
+  "main": "./lib/index.js"
+}
