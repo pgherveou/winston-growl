@@ -20,9 +20,17 @@ Just add a growl option to your logger
 var winston = require('winston')
   , require('winston-growl');
   
-winston.loggers.add('notifier', growl: {/*logger options*/});
-winston.loggers.notifier("this will trigger a growl notification", {title:'optional title'});
+winston.loggers.add('growler', {
+  growl: {
+    /* sepcify transport options*/
+  }
+  // other transports
 
+});
+
+growler = winston.loggers.get('growler');
+growler.info("this will trigger a growl notification", {title:'optional title'});
+growler.error("this will trigger anoter growl notification", {title:'Errror'});
 
 ```
 
