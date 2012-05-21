@@ -13,14 +13,14 @@ $ npm install winston-growl
 
 usage
 -----
-Just add a growl option to your logger 
+Just add a growl option to your logger
 
 ```javascript
 
 var winston = require('winston')
   , require('winston-growl');
-  
-winston.loggers.add('growler', {
+
+winston.loggers.add('logger', {
   growl: {
     /* sepcify transport options*/
   }
@@ -28,9 +28,9 @@ winston.loggers.add('growler', {
 
 });
 
-growler = winston.loggers.get('growler');
-growler.info("info notification", {title:'optional title'});
-growler.error("error notification", {title:'Errror'});
+logger = winston.loggers.get('logger');
+logger.info("info notification", {title:'optional title'});
+logger.error("error notification", {title:'Errror'});
 
 ```
 
