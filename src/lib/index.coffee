@@ -9,6 +9,7 @@ levelImages =
   warn : path.join assetDir, 'sq-warn.png'
   error: path.join assetDir, 'sq-error.png'
 
+module.exports =
 class winston.transports.Growl extends winston.Transport
 
   name: 'growl'
