@@ -25,7 +25,6 @@ winston.loggers.add('logger', {
     /* sepcify transport options*/
   }
   // other transports
-
 });
 
 logger = winston.loggers.get('logger');
@@ -33,6 +32,10 @@ logger.info("info notification", {title:'optional title'});
 logger.error("error notification", {title:'Errror'});
 
 ```
+
+![growl info screenshot](https://github.com/pgherveou/winston-growl/raw/gh-pages/images/growl.info-notification.png)
+
+![growl error screenshot](https://github.com/pgherveou/winston-growl/raw/gh-pages/images/growl.error-notification.png)
 
 
 
