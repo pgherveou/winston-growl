@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Winston-growl by pgherveou</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Winston-growl</h1>
+        <p>growl transport logging for winston</p>
+
+        <p class="view"><a href="https://github.com/pgherveou/winston-growl">View the Project on GitHub <small>pgherveou/winston-growl</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/pgherveou/winston-growl/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/pgherveou/winston-growl/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/pgherveou/winston-growl">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>winston-growl</h1>
+
+<p>growl transport logging for winston</p>
+
+<h2>install</h2>
+
+<pre><code>$ npm install winston-growl
+</code></pre>
+
+<h2>usage</h2>
+
+<p>Just add a growl option to your logger</p>
+
+<div class="highlight">
+<pre>
+<span class="kd">var</span> <span class="nx">winston</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'winston'</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'winston-growl'</span><span class="p">);</span>
+
+<span class="nx">winston</span><span class="p">.</span><span class="nx">loggers</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'logger'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">growl</span><span class="o">:</span> <span class="p">{</span>
+    <span class="cm">/* sepcify transport options*/</span>
+  <span class="p">}</span>
+  <span class="c1">// other transports</span>
+<span class="p">});</span>
+
+<span class="nx">logger</span> <span class="o">=</span> <span class="nx">winston</span><span class="p">.</span><span class="nx">loggers</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'logger'</span><span class="p">);</span>
+<span class="nx">logger</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">"info notification"</span><span class="p">,</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span><span class="s1">'optional title'</span><span class="p">});</span>
+<span class="nx">logger</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"error notification"</span><span class="p">,</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span><span class="s1">'Errror'</span><span class="p">});</span>
+
+</pre>
+</div>
+
+
+<p><img src="https://github.com/pgherveou/winston-growl/raw/gh-pages/images/info-notification.png" alt="growl info screenshot"></p>
+
+<p><img src="https://github.com/pgherveou/winston-growl/raw/gh-pages/images/error-notification.png" alt="growl error screenshot"></p>
+
+<p>To make it work you will need to install <a href="http://growl.info/growlupdateavailable" title="growl">growl</a> and <a href="http://growl.info/downloads" title="growlNotify">growlNotify</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/pgherveou">pgherveou</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
