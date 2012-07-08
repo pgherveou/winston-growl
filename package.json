@@ -2,10 +2,10 @@
   "name": "winston-growl",
   "description": "A growl transport for winston",
   "author": "Pierre Herveou <pgherveou@gmail.com>",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pgherveou/winston-growl"
+    "url": "http://pgherveou.github.com/winston-growl/"
   },
   "keywords": ["logging", "winston", "growl"],
   "dependencies": {
