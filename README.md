@@ -33,10 +33,9 @@ logger.error("error notification", {title:'Errror'});
 
 ```
 
-![growl info screenshot](https://github.com/pgherveou/winston-growl/raw/gh-pages/images/growl.info-notification.png)
+![growl info screenshot](https://github.com/pgherveou/winston-growl/raw/gh-pages/images/info-notification.png)
 
-![growl error screenshot](https://github.com/pgherveou/winston-growl/raw/gh-pages/images/growl.error-notification.png)
-
+![growl error screenshot](https://github.com/pgherveou/winston-growl/raw/gh-pages/images/error-notification.png)
 
 
 To make it work you will need to install [growl] [1] and [growlNotify] [2]
