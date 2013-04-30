@@ -11,6 +11,11 @@ install
 $ npm install winston-growl
 ```
 
+To make it work you will need to install [growl] [1] and [growlNotify] [2]
+
+[1]: http://growl.info/growlupdateavailable   "growl"
+[2]: http://growl.info/downloads              "growlNotify"
+
 usage
 -----
 Just add a growl option to your logger
@@ -38,8 +43,12 @@ logger.error("error notification", {title:'Errror'});
 ![growl error screenshot](https://github.com/pgherveou/winston-growl/raw/gh-pages/images/error-notification.png)
 
 
-To make it work you will need to install [growl] [1] and [growlNotify] [2]
+test
+----
 
+```
+node test // should print a grow info and error msg
+```
 
-[1]: http://growl.info/growlupdateavailable   "growl"
-[2]: http://growl.info/downloads              "growlNotify"
+[1]: https://github.com/andris9/nodemailer   "nodemailer"
+
