@@ -2,7 +2,7 @@
   "name": "winston-growl",
   "description": "A growl transport for winston",
   "author": "Pierre Herveou <pgherveou@gmail.com>",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "homepage": "http://pgherveou.github.com/winston-growl/",
   "repository": {
     "type": "git",
@@ -12,12 +12,6 @@
   "dependencies": {
     "growl"        : "*",
     "winston"      : "*"
-  },
-  "devDependencies": {
-    "coffee-script": "*"
-  },
- "scripts": {
-    "prepublish": "cake build"
   },
   "main": "./lib/index.js"
 }

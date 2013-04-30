@@ -17,8 +17,8 @@ Just add a growl option to your logger
 
 ```javascript
 
-var winston = require('winston')
-  , require('winston-growl');
+var winston = require('winston');
+require('winston-growl');
 
 winston.loggers.add('logger', {
   growl: {
