@@ -2,7 +2,7 @@
   "name": "winston-growl",
   "description": "A growl transport for winston",
   "author": "Pierre Herveou <pgherveou@gmail.com>",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "http://pgherveou.github.com/winston-growl/",
   "repository": {
     "type": "git",
